@@ -132,12 +132,43 @@ class _RestaurentNearmeState extends State<RestaurentNearme> {
                     List.generate(widget.restaurant!.menu!.length, (index) {
                   Food food = widget.restaurant!.menu![index];
                   return Container(
-                    margin: EdgeInsets.all(25),
+                    margin: EdgeInsets.symmetric(horizontal: 25,vertical: 25),
+                    alignment: Alignment.bottomCenter,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
                       image: DecorationImage(
                         image: AssetImage('${food.imageUrl}'),
                         fit: BoxFit.cover,
+                      ),
+                    ),
+                    child:
+                    Container(
+                      height: 50,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(20),
+                          topLeft: Radius.circular(20),
+                        ),
+                        color: Colors.black.withOpacity(0.5),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text('${food.name}',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text('${food.price}\$',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   );
@@ -150,3 +181,4 @@ class _RestaurentNearmeState extends State<RestaurentNearme> {
     );
   }
 }
+
