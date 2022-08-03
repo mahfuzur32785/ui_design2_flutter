@@ -6,6 +6,7 @@ class Restaurant {
   final String? address;
   final int? rating;
   final List<Food>? menu;
+  final double? distance;
 
   Restaurant({
     this.imageUrl,
@@ -13,5 +14,6 @@ class Restaurant {
     this.address,
     this.rating,
     this.menu,
+    this.distance,
   });
 }

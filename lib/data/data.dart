@@ -27,6 +27,7 @@ final _restaurant0 = Restaurant(
   name: 'Restaurant 0',
   address: 'Dhanmondi, Dhaka, BD',
   rating: 5,
+  distance: 5.2,
   menu: [_burrito, _steak, _pasta, _ramen, _pancakes, _burger, _pizza, _salmon],
 );
 final _restaurant1 = Restaurant(
@@ -34,6 +35,7 @@ final _restaurant1 = Restaurant(
   name: 'Restaurant 1',
   address: 'Mirpur, Dhaka, BD',
   rating: 4,
+  distance: 2.3,
   menu: [_steak, _pasta, _ramen, _pancakes, _burger, _pizza],
 );
 final _restaurant2 = Restaurant(
@@ -41,6 +43,7 @@ final _restaurant2 = Restaurant(
   name: 'Restaurant 2',
   address: 'Gulsan, Dhaka, DB',
   rating: 4,
+  distance: 0.3,
   menu: [_steak, _pasta, _pancakes, _burger, _pizza, _salmon],
 );
 final _restaurant3 = Restaurant(
@@ -48,6 +51,7 @@ final _restaurant3 = Restaurant(
   name: 'Restaurant 3',
   address: 'Kakrail, Dhaka, BD',
   rating: 2,
+  distance: 0.1,
   menu: [_burrito, _steak, _burger, _pizza, _salmon],
 );
 final _restaurant4 = Restaurant(
@@ -55,6 +59,7 @@ final _restaurant4 = Restaurant(
   name: 'Restaurant 4',
   address: 'Firmgate, Dhaka, BD',
   rating: 3,
+  distance: 4.1,
   menu: [_burrito, _ramen, _pancakes, _salmon],
 );
 
@@ -107,6 +112,12 @@ final currentUser = User(
       food: _burger,
       restaurant: _restaurant2,
       quantity: 2,
+    ),
+    Order(
+      date: 'Nov 1, 2019',
+      food: _pancakes,
+      restaurant: _restaurant4,
+      quantity: 1,
     ),
     Order(
       date: 'Nov 11, 2019',

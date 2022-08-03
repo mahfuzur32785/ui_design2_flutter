@@ -55,7 +55,7 @@ class RecentOrder extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Text(
             'Recent Order',
             style: TextStyle(
@@ -66,7 +66,7 @@ class RecentOrder extends StatelessWidget {
         ),
         SizedBox(height: 10),
         Container(
-          margin: EdgeInsets.symmetric(horizontal: 5,vertical: 0),
+          margin: EdgeInsets.symmetric(horizontal: 5,vertical: 5),
           height: MediaQuery.of(context).size.height*0.14,
           //color: Colors.red,
           child: ListView.separated(
